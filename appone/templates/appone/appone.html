@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{titre}}</title>
+  </head>
+  <body>  
+<div>
+  <form action="/appone/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Valider">
+  </form>
+</div>
+  </body>
+</html>
